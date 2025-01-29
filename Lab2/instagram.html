@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 900px;
+        }
+        .left {
+            margin-right: 50px;
+        }
+        .phone-image {
+            width: 460px;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login-box {
+            background-color: #1c1c1c;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 320px;
+        }
+        .logo {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 5px 0;
+            background-color: #333;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        .login-btn {
+            width: 107%;
+            padding: 12px;
+            background-color: #0095f6;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .or {
+            margin: 15px 0;
+            color: gray;
+        }
+        .fb-login {
+            background: none;
+            color: #0095f6;
+            border: none;
+            cursor: pointer;
+        }
+        .forgot {
+            color: #0095f6;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+        .register-box {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .register-box a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+        .apps {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .store-links img {
+            width: 90px;
+            margin: 5px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: gray;
+        }
+
+        /* Медиа-запросы для мобильных устройств */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .phone-image {
+                width: 320px;
+            }
+            .login-box {
+                width: 280px;
+            }
+            .store-links img {
+                width: 130px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="IG.png" alt="Instagram Preview" class="phone-image">
+        </div>
+        <div class="right">
+            <div class="login-box">
+                <img src="instaLogo.png" alt="Instagram" class="logo">
+                <input type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+                <input type="password" placeholder="Пароль">
+                <button class="login-btn">Войти</button>
+                <div class="or">ИЛИ</div>
+                <button class="fb-login">Войти через Facebook</button>
+                <a href="#" class="forgot">Забыли пароль?</a>
+            </div>
+            <div class="register-box">
+                У вас ещё нет аккаунта? <a href="#">Зарегистрироваться</a>
+            </div>
+            <div class="apps">
+                <p>Установите приложение.</p>
+                <div class="store-links">
+                    <img src="appstore.png" alt="App Store">
+                    <img src="playstore.png" alt="Google Play">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Meta &copy; 2025 Instagram from Baxos</p>
+    </footer>
+</body>
+</html>
