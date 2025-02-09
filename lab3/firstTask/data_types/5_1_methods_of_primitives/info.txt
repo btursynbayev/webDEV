@@ -1,0 +1,2 @@
+Primitives except null and undefined provide many helpful methods. We will study those in the upcoming chapters.
+Formally, these methods work via temporary objects, but JavaScript engines are well tuned to optimize that internally, so they are not expensive to call.
