@@ -1,0 +1,37 @@
+<div class="container">
+  <h1>Online Store</h1>
+  
+  <div class="categories">
+    @for (category of mainCategories; track category.id) {
+      <button 
+        (click)="selectCategory(category)"
+        [class.active]="selectedParentCategory?.id === category.id || selectedCategory?.id === category.id"
+      >
+        {{ category.name }}
+      </button>
+    }
+  </div>
+
+  @if (selectedParentCategory?.id === 2) {
+    <div class="subcategories">
+      @for (category of subCategories; track category.id) {
+        <button 
+          (click)="selectSubCategory(category)"
+          [class.active]="selectedCategory?.id === category.id"
+        >
+          {{ category.name }}
+        </button>
+      }
+    </div>
+  }
+
+  @if (selectedCategory) {
+    <app-product-list 
+      [products]="filteredProducts"
+      (like)="onProductLike($event)"
+      (remove)="onProductRemove($event)"
+    ></app-product-list>
+  } @else {
+    <p>Please select a category</p>
+  }
+</div>

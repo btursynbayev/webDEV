@@ -1,0 +1,19 @@
+<div class="product-card" (click)="goToKaspi(product.link)">
+  <div class="product-image-container">
+    <img [src]="product.image" [alt]="product.name" class="product-image">
+  </div>
+  <div class="product-info">
+    <h3>{{product.name}}</h3>
+    <p class="price">Price: ${{product.price}}</p>
+    <p class="description">{{product.description}}</p>
+    <div class="rating-likes">
+      <p>Rating: {{product.rating}} ⭐</p>
+      <p>Likes: {{product.likes}} ❤️</p>
+    </div>
+    <div class="button-group" (click)="$event.stopPropagation()">
+      <button (click)="onLike()">Like</button>
+      <button (click)="onRemove()">Remove</button>
+      <button (click)="goToKaspi(product.link)">Buy on Kaspi</button>
+    </div>
+  </div>
+</div> 

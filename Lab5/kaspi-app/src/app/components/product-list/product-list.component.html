@@ -1,0 +1,9 @@
+<div class="product-list">
+  @for (product of products; track product.id) {
+    <app-product-item
+      [product]="product"
+      (remove)="removeProduct($event)"
+      (like)="likeProduct($event)"
+    />
+  }
+</div> 
