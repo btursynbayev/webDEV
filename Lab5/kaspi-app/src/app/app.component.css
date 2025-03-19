@@ -22,7 +22,7 @@ button {
 }
 
 button.active {
-  background-color: #007bff;
+  background-color: #6c6565;
   color: white;
 }
 
@@ -38,6 +38,6 @@ button.active {
 }
 
 .subcategories button.active {
-  background-color: #0056b3;
+  background-color: #6c6565;
   color: white;
 }

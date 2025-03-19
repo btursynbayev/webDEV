@@ -89,18 +89,18 @@ export const products: Product[] = [
     link: 'https://kaspi.kz/shop/p/apple-macbook-air-13-mgn63-seryi-100797845/?c=750000000',
     gallery: ['https://resources.cdn-kaspi.kz/img/m/p/h73/h87/63947822596126.jpg?format=gallery-medium']
   },
-  {
-    id: 7,
-    categoryId: 2,
-    name: 'ASUS ROG Strix G16',
-    price: 1299,
-    description: 'Ноутбук ASUS ROG Strix G16 G614JI-N3163',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h88/h39/84941601816606.jpg?format=gallery-medium',
-    likes: 0,
-    rating: 4.7,
-    link: 'https://kaspi.kz/shop/p/asus-rog-strix-g16-g614ji-n3163-90nr0c11-m00770-chernyi-115970312/?c=750000000',
-    gallery: ['https://resources.cdn-kaspi.kz/img/m/p/h88/h39/84941601816606.jpg?format=gallery-medium']
-  },
+  // {
+  //   id: 7,
+  //   categoryId: 2,
+  //   name: 'ASUS ROG Strix G16',
+  //   price: 1299,
+  //   description: 'Ноутбук ASUS ROG Strix G16 G614JI-N3163',
+  //   image: 'https://resources.cdn-kaspi.kz/img/m/p/h88/h39/84941601816606.jpg?format=gallery-medium',
+  //   likes: 0,
+  //   rating: 4.7,
+  //   link: 'https://kaspi.kz/shop/p/asus-rog-strix-g16-g614ji-n3163-90nr0c11-m00770-chernyi-115970312/?c=750000000',
+  //   gallery: ['https://resources.cdn-kaspi.kz/img/m/p/h88/h39/84941601816606.jpg?format=gallery-medium']
+  // },
   // Electronics - Headphones
   {
     id: 8,
@@ -121,7 +121,7 @@ export const products: Product[] = [
     name: 'Apple Watch Series 9',
     price: 399,
     description: 'Смарт-часы Apple Watch Series 9 GPS M/L черный',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/hd4/h94/84573235601438.jpg?format=gallery-medium',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h06/h98/83874224799774.jpg?format=gallery-medium',
     likes: 0,
     rating: 4.8,
     link: 'https://kaspi.kz/shop/p/apple-watch-series-9-gps-m-l-chernyi-113398437/?c=750000000',
@@ -130,7 +130,7 @@ export const products: Product[] = [
 
   // Books
   {
-    id: 8,
+    id: 10,
     categoryId: 3,
     name: 'Novel',
     price: 15,
@@ -142,7 +142,7 @@ export const products: Product[] = [
     gallery: ['novel.jpg']
   },
   {
-    id: 9,
+    id: 11,
     categoryId: 3,
     name: 'Cookbook',
     price: 25,
@@ -154,7 +154,7 @@ export const products: Product[] = [
     gallery: ['cookbook.jpg']
   },
   {
-    id: 10,
+    id: 12,
     categoryId: 3,
     name: 'Science Book',
     price: 30,
@@ -166,7 +166,7 @@ export const products: Product[] = [
     gallery: ['science.jpg']
   },
   {
-    id: 11,
+    id: 13,
     categoryId: 3,
     name: 'History Book',
     price: 20,
@@ -178,7 +178,7 @@ export const products: Product[] = [
     gallery: ['history.jpg']
   },
   {
-    id: 12,
+    id: 14,
     categoryId: 3,
     name: 'Comic Book',
     price: 10,
@@ -192,7 +192,7 @@ export const products: Product[] = [
 
   // Clothing
   {
-    id: 13,
+    id: 15,
     categoryId: 4,
     name: 'T-Shirt',
     price: 20,
@@ -204,7 +204,7 @@ export const products: Product[] = [
     gallery: ['tshirt.jpg']
   },
   {
-    id: 14,
+    id: 16,
     categoryId: 4,
     name: 'Jeans',
     price: 50,
@@ -216,7 +216,7 @@ export const products: Product[] = [
     gallery: ['jeans.jpg']
   },
   {
-    id: 15,
+    id: 17,
     categoryId: 4,
     name: 'Jacket',
     price: 80,
@@ -228,7 +228,7 @@ export const products: Product[] = [
     gallery: ['jacket.jpg']
   },
   {
-    id: 16,
+    id: 18,
     categoryId: 4,
     name: 'Shoes',
     price: 60,
@@ -240,7 +240,7 @@ export const products: Product[] = [
     gallery: ['shoes.jpg']
   },
   {
-    id: 17,
+    id: 19,
     categoryId: 4,
     name: 'Hat',
     price: 15,
@@ -254,7 +254,7 @@ export const products: Product[] = [
 
   // Sports
   {
-    id: 18,
+    id: 20,
     categoryId: 5,
     name: 'Basketball',
     price: 25,
@@ -262,11 +262,11 @@ export const products: Product[] = [
     image: 'basketball.jpg',
     likes: 0,
     rating: 4.7,
-    link: 'https://example.com/basketball',
+    link: 'https://kaspi.kz/shop/p/dlja-basketbola-jogel-jb-100-7-100624885/?srsltid=AfmBOopiye3nEk4rjattvkwzFaVjYgmXNCbsWwcQQZihuOaqXxFkvrjw',
     gallery: ['basketball.jpg']
   },
   {
-    id: 19,
+    id: 21,
     categoryId: 5,
     name: 'Tennis Racket',
     price: 100,
@@ -278,7 +278,7 @@ export const products: Product[] = [
     gallery: ['racket.jpg']
   },
   {
-    id: 20,
+    id: 22,
     categoryId: 5,
     name: 'Football',
     price: 30,
@@ -290,7 +290,7 @@ export const products: Product[] = [
     gallery: ['football.jpg']
   },
   {
-    id: 21,
+    id: 23,
     categoryId: 5,
     name: 'Yoga Mat',
     price: 20,
@@ -302,7 +302,7 @@ export const products: Product[] = [
     gallery: ['yoga.jpg']
   },
   {
-    id: 22,
+    id: 24,
     categoryId: 5,
     name: 'Dumbbells',
     price: 40,

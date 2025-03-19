@@ -1,9 +1,9 @@
 <div class="container">
-  <h1>Online Store</h1>
-  
+  <h1>Baxos's online store</h1>
+
   <div class="categories">
     @for (category of mainCategories; track category.id) {
-      <button 
+      <button
         (click)="selectCategory(category)"
         [class.active]="selectedParentCategory?.id === category.id || selectedCategory?.id === category.id"
       >
@@ -15,7 +15,7 @@
   @if (selectedParentCategory?.id === 2) {
     <div class="subcategories">
       @for (category of subCategories; track category.id) {
-        <button 
+        <button
           (click)="selectSubCategory(category)"
           [class.active]="selectedCategory?.id === category.id"
         >
@@ -26,12 +26,12 @@
   }
 
   @if (selectedCategory) {
-    <app-product-list 
+    <app-product-list
       [products]="filteredProducts"
       (like)="onProductLike($event)"
       (remove)="onProductRemove($event)"
     ></app-product-list>
   } @else {
-    <p>Please select a category</p>
+    <p> Please select a category for working with our website easily :) </p>
   }
 </div>

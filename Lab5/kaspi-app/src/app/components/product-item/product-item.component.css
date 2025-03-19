@@ -44,7 +44,7 @@ h3 {
 
 .price {
   font-size: 1.1em;
-  color: #e44d26;
+  color: #6c6565;
   font-weight: bold;
   margin: 5px 0;
 }
@@ -78,20 +78,20 @@ button {
 }
 
 button:first-child {
-  background-color: #ff4081;
+  background-color: #6c6565;
   color: white;
 }
 
 button:nth-child(2) {
-  background-color: #f44336;
+  background-color: #6c6565;
   color: white;
 }
 
 button:last-child {
-  background-color: #ff6b00;
+  background-color: #6c6565;
   color: white;
 }
 
 button:hover {
   opacity: 0.9;
-} 
+}

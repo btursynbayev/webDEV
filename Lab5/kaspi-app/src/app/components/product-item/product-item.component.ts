@@ -20,16 +20,7 @@ export class ProductItemComponent {
     this.remove.emit(this.product.id);
   }
 
-  shareProduct(link: string) {
-    const message = `Check out this product: ${link}`;
-    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
-    const telegramUrl = `https://t.me/share/url?url=${encodeURIComponent(link)}&text=${encodeURIComponent(message)}`;
-
-    window.open(whatsappUrl, '_blank');
-    window.open(telegramUrl, '_blank');
-  }
-
   goToKaspi(link: string) {
     window.open(link, '_blank');
   }
-} 
+}
